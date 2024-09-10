@@ -1,0 +1,320 @@
+:root{
+    --text: #02070c;
+    --background: #f9fcfe;
+    --primary: #3f9bd9;
+    --secondary: #9786e7;
+    --accent: #8d59de;
+  }
+
+  #store-banner-img {
+    width: 100%;
+  }
+  
+.store-container h1 {
+    font-size: 56px;
+    letter-spacing: 1px;
+    border-bottom: 5px solid #8d59de;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+.store-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+.store-cards {
+    border: 1px solid #9786e7;
+    width: 450px;
+    height: 700px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .3s;
+    position: relative;
+}
+
+
+.store-cards:hover {
+background-color: var(--accent);
+scale: 1.050;
+}
+
+.store-cards h2 {
+    text-align: center;
+    font-size: 46px;
+    color: var(--text);
+    letter-spacing: 2px;
+}
+
+.store-cards h3 {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: auto;
+    border-radius: 10px;
+    background-color: var(--primary);
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+    color: var(--background);
+}
+
+.store-cards h3:hover {
+    scale: 1.1;
+}
+
+.store-cards p {
+    font-size: 18px;
+    text-align: center;
+    color: var(--text);
+}
+
+.store-cards img {
+    width: 450px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+/* MUSIC PAGE */
+
+#music-page-heading {
+    text-align: center;
+    font-size: 66px;
+}
+
+.music-headphone {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+
+
+.music-headphone-card h1 {
+color: var(--text);
+}
+
+.music-headphone-card img {
+    width: 350px;
+}
+
+.music-headphone-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #edf0f2;
+    border-radius: 10px;
+    height: 550px;
+    transition: .4s;
+}
+
+
+.music-headphone-card:hover {
+    scale: 1.020;
+    background-color: var(--background);
+}
+
+.music-headphone-card h4 {
+    background-color: var(--secondary);
+    width: 150px;
+    height: 40px;
+    line-height: 42px;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 5px;
+    cursor: pointer;
+    user-select: none;
+    transition: .4s;
+    color: var(--background);
+}
+
+.music-headphone-card h4:hover {
+    scale: 1.050;
+}
+
+
+.music-headphone-card .fa-star, 
+.music-headphone-card .fa-star-half-stroke {
+    color: var(--accent);
+}
+
+
+.music-headphone-card p {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+
+  .remove-one-button {
+    background-color: #8d59de;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+  
+  .remove-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .clear-cart-button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+
+  
+.cart {
+   position: fixed;
+   right: -300px;
+   top: 0px;
+   background-color: var(--secondary);
+   width: 300px;
+   height: 100vh;
+}
+
+.cart h2 {
+    text-align: center;
+    color: var(--background);
+    font-size: 36px;
+}
+
+#empty-cart{
+    text-align: center;
+    color: var(--background);
+}
+
+.cart-item {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+
+    margin-top: 50px;
+}
+
+
+.product-text {
+    margin-top: 80px;
+}
+
+
+.product-text h1 {
+  font-size: 66px;
+  width: 100%;
+}
+
+#product-description {
+    font-size: 26px;
+    color: #02070c;
+}
+
+#product-price {
+    margin-top: 5px;
+}
+
+.product-text hr {
+    margin-top: 15px;
+}
+
+.product-text p {
+    font-size: 38px; 
+    font-weight: 500;
+    color: var(--accent);
+}
+
+.product-text span {
+    font-size: 25px;
+    vertical-align: top; 
+   margin-top: 200px;
+}
+
+  .product-features li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text);
+    list-style-type: disc;
+
+  }
+  
+
+  #shopping-cart-close {
+    font-size: 26px;
+    color: var(--background);
+    cursor: pointer;
+    padding: 10px 10px 0px;
+    transition: .3s;
+  }
+
+  #shopping-cart-close:hover {
+    scale: 1.2;
+  }
+
+  .out-of-stock {
+    position: absolute;
+    background-color: #ccc;
+    color: #02070c;
+    width: 100%;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    padding: 10px; 
+  }
+
+  #cart-view {
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background-color: #ccc;
+    padding: 10px ;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: .4s;
+    cursor: pointer;
+  }
+
+  #cart-view:hover {
+    scale: 1.1;
+  }
+  
+  .heading-page {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 76px;
+  }
+
+  

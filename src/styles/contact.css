@@ -1,0 +1,154 @@
+:root{
+    --text: #02070c;
+    --background: #f9fcfe;
+    --primary: #3f9bd9;
+    --secondary: #9786e7;
+    --accent: #8d59de;
+  }
+
+.contact-page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-section h1 {
+    font-size: 76px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+#contact-page-form {
+    user-select: none;
+}
+
+.name-put,
+.email-put,
+.message-put{
+    width: 500px;
+    height: 50px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: 0;
+}
+
+.message-put {
+    height: 200px; 
+   padding: 10px;
+   resize: none; 
+}
+
+.btn-sumbit {
+    width: 500px;
+    height: 50px;
+    cursor: pointer;
+    background-color: var(--primary);
+    border: 1px solid #02070c;
+    color: white;
+    border-radius: 5px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 33px;
+    transition: .5s;
+}
+
+.btn-sumbit:hover {
+    scale: 1.030;
+}
+
+
+.tooltip-section {
+   margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+#info-icon {
+    background-color: var(--primary);
+    padding: 15px 20px 15px 20px;
+    border-radius: 5px;
+    color: #f9fcfe;
+    cursor: pointer;
+    background-color: #02070c;
+    margin-top: 20px;
+}
+
+
+#contact-discord {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#contact-discord:hover {
+    scale: 1.1;
+}
+
+#conatact-email {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#conatact-email:hover {
+    scale: 1.1;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .tooltip-box {
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--text);
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 100;
+    opacity: 0.9;
+    visibility: visible;
+    font-size: 18px;
+    padding: 20px;
+    transition: .4s;
+    user-select: none;
+  }
+ 
+  
+  .tooltip-box::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #02070c transparent transparent transparent;
+  }
+  
+
+  
