@@ -23,7 +23,7 @@ export function Hero() {
       <div className="hero-text">
           <h1>Premium <span>Headphone</span> </h1>
           <p>Find The Best HeadPhone of your needs</p>
-            <Link to="/store" className="explore-btn test">Explore</Link>
+            <Link to="/store"><button className='explore-btn'>Explore</button></Link>
           </div>
           <div className="hero-img-container">
           <img src='/img/Hero.png' alt="hero-img" className='hero-img' />
@@ -88,7 +88,10 @@ function Latest() {
     <p>
       Get the latest on headphones! From new releases to expert reviews, we cover everything. Discover tips for better sound, comparisons of top brands, and insights into the future of audio. Stay informed with our blog, whether you're a music lover or looking for your next pair of headphones.
     </p>
-    <Link to="/contact/newsblog" className="navlinks news-btn">Visit</Link>
+     <Link to="/contact/newsblog"><button id='visit-btns' className='visit-1'>Visit</button></Link>
+  </div>
+  <div className="news-btn">
+  <Link to="/contact/newsblog"><button id='visit-btns' className='visit-2'>Visit</button></Link>
   </div>
   <div className="news-img-container">
   <img src="img/News&Blog.png" alt="New&Blogs-img" id="newsblogs-img"/>
